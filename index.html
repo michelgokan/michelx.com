@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michel Gokan Khan, PhD · Computer Scientist &amp; Entrepreneur</title>
+  <meta name="description" content="Michel Gokan Khan, Stockholm-based computer scientist and entrepreneur working on agentic software engineering. CTO behind Condé Nast's VETTE, co-founder of Softwarify®, PhD in Computer Science, postdoc at KTH × AstraZeneca. Author of PerfCam, PerfSim, NFV-Inspector, and sfc-stress.">
+  <meta property="og:title" content="Michel Gokan Khan, PhD">
+  <meta property="og:description" content="Computer Scientist · Entrepreneur: CTO (Condé Nast's VETTE), Co-Founder of Softwarify®, ML researcher (KTH × AstraZeneca), patented inventor.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://michelx.com/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicon-512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#05080f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=39">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michel Gokan Khan",
+    "alternateName": "Michel Gokan",
+    "honorificSuffix": "PhD",
+    "jobTitle": "Chief Technology Officer",
+    "worksFor": [{ "@type": "Organization", "name": "Co-Cart AB" }, { "@type": "Organization", "name": "Softwarify AB" }],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Karlstad University" },
+      { "@type": "CollegeOrUniversity", "name": "KTH Royal Institute of Technology" },
+      { "@type": "CollegeOrUniversity", "name": "Iran University of Science and Technology" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Stockholm", "addressCountry": "SE" },
+    "url": "https://michelx.com/",
+    "sameAs": [
+      "https://www.linkedin.com/in/michelgokan/",
+      "https://scholar.google.com/citations?user=LJV0pHQAAAAJ",
+      "https://github.com/michelgokan"
+    ]
+  }
+  </script>
+  <script>
+    // Kill any service worker left behind by an earlier site on this domain: a
+    // stale cache-first SW would keep serving old HTML/JS no matter what we
+    // deploy. No-op when nothing is registered; reloads once after cleanup.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (rs) {
+        if (!rs.length) return;
+        Promise.all(rs.map(function (r) { return r.unregister(); }))
+          .then(function () { return (window.caches && caches.keys) ? caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }) : null; })
+          .then(function () { location.reload(); });
+      }).catch(function () {});
+    }
+  </script>
+  <script>if (location.hash === "#world") history.replaceState(null, "", location.pathname + location.search + "#story");</script>
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav id="dot-nav" aria-label="Section navigation">
+    <a href="#story" class="active"><span>Flight</span></a>
+    <a href="#about"><span>About</span></a>
+    <a href="#journey"><span>Journey</span></a>
+    <a href="#projects"><span>Projects</span></a>
+    <a href="#research"><span>Research</span></a>
+    <a href="#honors"><span>Honors</span></a>
+    <a href="#words"><span>Recommendations</span></a>
+    <a href="#talks"><span>Talks &amp; Press</span></a>
+    <a href="#teaching"><span>Teaching</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </nav>
+
+  <nav id="site-nav" aria-label="Main navigation">
+    <a class="brand" href="#story">Michel <em>Gokan Khan</em></a>
+    <ul>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#talks">Talks</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= SCROLL-WORLD (oso95/scroll-world engine) ================= -->
+  <div id="story"></div>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="about-stats reveal">
+        <div class="stat-chip"><div class="num"><span data-count="citations_all">273</span><span class="plus">+</span></div><div class="lbl">Citations</div></div>
+        <div class="stat-chip"><div class="num"><span data-count="h_index">9</span></div><div class="lbl">h-index</div></div>
+        <div class="stat-chip"><div class="num"><span data-count="static" data-value="24">24</span><span class="plus">+</span></div><div class="lbl">Publications</div></div>
+        <div class="stat-chip"><div class="num"><span data-count="static" data-value="33">33</span></div><div class="lbl">Projects</div></div>
+        <div class="stat-chip"><div class="num"><span data-count="static" data-value="3">3</span></div><div class="lbl">Patent Jurisdictions</div></div>
+        <div class="stat-chip"><div class="num"><span id="contrib-chip">4,282</span></div><div class="lbl">GitHub Contribs / yr</div></div>
+      </div>
+      <div class="portrait-card reveal">
+        <img class="avatar" src="assets/img/michel-presenting.jpg" alt="Michel Gokan Khan presenting at Digital Futures">
+        <div class="portrait-meta">
+          <div class="loc">Stockholm, Sweden</div>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/michelgokan/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=LJV0pHQAAAAJ" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://github.com/michelgokan" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="gh-strip">
+          <a href="https://github.com/michelgokan" target="_blank" rel="noopener"><img src="https://ghchart.rshah.org/4fd8eb/michelgokan" alt="GitHub contribution chart" loading="lazy"></a>
+          <div class="micro" id="gh-micro" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="bio-text">
+        <div class="section-head">
+          <span class="section-index">01 · About</span>
+          <h2 class="section-title">Where research meets the real world</h2>
+        </div>
+        <p class="lede">I'm a Stockholm-based computer scientist and entrepreneur, passionate about developing <em>real, groundbreaking technology</em>. My current focus: <em>agentic software engineering</em>.</p>
+        <p>As CEO and CTPO at <strong><a href="https://softwarify.ai" target="_blank" rel="noopener">Softwarify® AB</a></strong>, currently in stealth mode, I'm building a human-AI collaboration platform where both human and AI engineers build large-scale software together. I'm also the <strong>CTO at Co-Cart AB</strong>, where I lead the technology behind <strong>Condé Nast's VETTE</strong>. Previously, I served as CTO at Spotin AB, where I led the technology behind the product that was ultimately acquired by Condé Nast.</p>
+        <p>I hold a <strong>PhD in Computer Science (Machine Learning)</strong> from Karlstad University and conducted my postdoctoral research at <strong>KTH Royal Institute of Technology</strong> in collaboration with <strong>AstraZeneca</strong>. My research spans digital twinning, 3D Gaussian splatting, computer vision, and ML-driven optimization of cloud-native systems - with open-source tools like <strong>PerfCam</strong>, <strong>PerfSim</strong>, <strong>NFV-Inspector</strong>, and <strong>sfc-stress</strong> that are used in industry.</p>
+        <p>I’ve published more than a couple of dozen peer-reviewed scientific articles in top journals and conferences, including IEEE Transactions, with over 260 citations and several awards for my work. I’ve also done a fellowship/internship at <strong>Ericsson</strong>, focusing on microservice performance and optimization for 5G Core systems, and led teams in roles like Tech Lead and Solution Architect at RM Innovation, where I guided agile transformations and designed cutting-edge B2B2C solutions. I was also the founder of Olam Tech, where we served multiple customers worldwide, building innovative solutions like home automation systems, SaaS/PaaS solutions for online project assessments, and a complete online shopping solution, among many others. Throughout my career, I’ve built, optimized, and led teams through projects that blend research with real-world impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JOURNEY ================= -->
+  <section id="journey" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">02 · Journey</span>
+        <h2 class="section-title">Two decades of building</h2>
+        <p class="section-sub">Academia and industry, interleaved by design: every research result pushed toward production, every product informed by research.</p>
+      </div>
+
+      <div id="timeline-wrap">
+        <div id="timeline-line"></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Jul 2025 - Present</div>
+          <div class="tl-role">Chief Technology Officer</div>
+          <div class="tl-org">Co-Cart AB · Condé Nast's VETTE</div>
+          <p class="tl-desc">Leading the technology behind Condé Nast's VETTE platform. Proud that Spotin has been acquired by Condé Nast: what was Spotin will now be used to power VETTE.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Jul 2025 - Present</div>
+          <div class="tl-role">Co-Founder · Chairman · CEO/CTPO</div>
+          <div class="tl-org">Softwarify® AB</div>
+          <p class="tl-desc">An AI-first platform for software development teams - collaborative human-machine agentic development for large-scale microservice systems.</p>
+          <span class="tl-badge">STEALTH MODE</span>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Mar 2024 - Jul 2025</div>
+          <div class="tl-role">Industrial Postdoctoral Fellow</div>
+          <div class="tl-org">KTH Royal Institute of Technology × AstraZeneca</div>
+          <p class="tl-desc">ML-based optimization: computer vision, 3D reconstruction, digital twinning, and predictive maintenance for Industry 5.0 - the <a href="https://www.digitalfutures.kth.se/project/smart-smart-predictive-maintenance-for-the-pharmaceutical-industry/" target="_blank" rel="noopener">SMART project</a> funded by Digital Futures.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Feb 2022 - Jan 2024</div>
+          <div class="tl-role">Chief Technology Officer</div>
+          <div class="tl-org">Spotin AB</div>
+          <p class="tl-desc">Hands-on CTO: re-architected the entire product into a scalable microservice architecture with modern DevOps.</p>
+          <span class="tl-badge">ACQUIRED BY CONDÉ NAST</span>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Oct 2017 - Nov 2023</div>
+          <div class="tl-role">PhD in Computer Science</div>
+          <div class="tl-org">Karlstad University · Ericsson · VoerEir</div>
+          <p class="tl-desc">Thesis: <em>Unchaining Microservice Chains: Machine Learning Driven Optimization in Cloud Native Systems</em>. <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1811762&amp;dswid=-1310" target="_blank" rel="noopener">[Thesis]</a> <a href="https://www.youtube.com/watch?v=bVvymER-ZcM" target="_blank" rel="noopener">[Defence video]</a></p>
+          <span class="tl-badge">SPEC AWARD NOMINEE</span>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">May 2018 - Jan 2020</div>
+          <div class="tl-role">Fellowship/Intern</div>
+          <div class="tl-org">Ericsson, Kista</div>
+          <p class="tl-desc">Researched and patented performance modeling and optimization methods for 4G-LTE and 5G Core systems.</p>
+          <span class="tl-badge">PATENT · US 11,962,474</span>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">2018</div>
+          <div class="tl-role">Visiting Research Collaborator</div>
+          <div class="tl-org">Zhejiang University, China</div>
+          <p class="tl-desc">MACoMEC - collaborative mobility-aware computation offloading for mobile edge computing (China-Sweden STINT project).</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Feb 2016 - Jan 2017</div>
+          <div class="tl-role">Tech Lead · Solution Architect</div>
+          <div class="tl-org">RM Innovation, Kentucky (Remote)</div>
+          <p class="tl-desc">Designed B2B2C solutions and led the organization's agile transformation.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">2013 - 2016</div>
+          <div class="tl-role">MSc in Software Engineering</div>
+          <div class="tl-org">Iran University of Science and Technology</div>
+          <p class="tl-desc">High-performance distributed systems. Thesis: SLA-aware virtual machine CPU scheduling in cloud environments.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Oct 2013 - Oct 2014</div>
+          <div class="tl-role">Senior Full-Stack Developer</div>
+          <div class="tl-org">Vaimo AB, Stockholm (Remote)</div>
+          <p class="tl-desc">Contributed BE/FE development, modules, and support across high-profile Magento retail projects, working remotely with a 125-person team.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Jun 2011 - Dec 2015</div>
+          <div class="tl-role">Co-Founder &amp; CEO</div>
+          <div class="tl-org">Olam Technologies Group</div>
+          <p class="tl-desc">Software house serving customers worldwide: home automation, SaaS/PaaS for online project assessment, and complete e-commerce solutions.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Dec 2009 - Jan 2011</div>
+          <div class="tl-role">Project Manager</div>
+          <div class="tl-org">Nutriga Technologies, Tehran</div>
+          <p class="tl-desc">Managed and delivered diverse online solutions across industries.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">Jan 2008 - Dec 2009</div>
+          <div class="tl-role">Software Developer</div>
+          <div class="tl-org">Setareh Sepehr Afzar, Tehran</div>
+          <p class="tl-desc">Windows-based fixed-asset management application - the first shipped product.</p>
+        </div></div>
+
+        <div class="tl-item"><span class="tl-node"></span><div class="tl-card">
+          <div class="tl-when">2007 - 2013</div>
+          <div class="tl-role">BSc in Applied Mathematics</div>
+          <div class="tl-org">IAU Tehran</div>
+          <p class="tl-desc">Applications of mathematical optimization in computer science.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">03 · Projects</span>
+        <h2 class="section-title">Most notable projects</h2>
+        <p class="section-sub">A lifetime of projects, from a RoboCup soccer-simulation team in 2006 to agentic AI platforms in 2026: research tools, open source, startups, acquisitions, robots, and games.</p>
+      </div>
+      <div id="filter-bar" class="filter-bar" role="tablist" aria-label="Project filters"></div>
+      <div id="projects-grid"></div>
+      <noscript><p>JavaScript is required to render the interactive project gallery - meanwhile, everything lives on <a href="https://github.com/michelgokan">GitHub</a>.</p></noscript>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <section id="research" class="section">
+    <div class="bg-video" aria-hidden="true">
+      <video data-bg autoplay muted loop playsinline preload="metadata">
+        <source src="assets/media/twin.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">04 · Research</span>
+        <h2 class="section-title">Publications &amp; patents</h2>
+        <p class="section-sub">Cloud, edge, and fog performance optimization · digital twinning · computer vision · ML-driven systems. Full list on <a href="https://scholar.google.com/citations?user=LJV0pHQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      </div>
+
+      <div class="metrics-row">
+        <div class="metric-panel reveal">
+          <h4>Citations per year</h4>
+          <div id="citation-chart"></div>
+        </div>
+        <div class="metric-panel reveal">
+          <h4>Scholar metrics <span id="gscholar-stats" style="display:none"></span></h4>
+          <div class="scholar-numbers">
+            <div class="cell"><div class="num"><span data-count="citations_all">273</span></div><div class="lbl">Citations</div></div>
+            <div class="cell"><div class="num"><span data-count="h_index">9</span></div><div class="lbl">h-index</div></div>
+            <div class="cell"><div class="num"><span data-count="i10_index">9</span></div><div class="lbl">i10-index</div></div>
+            <div class="cell"><div class="num"><span data-count="static" data-value="2">2</span></div><div class="lbl">IEEE Paper Awards</div></div>
+          </div>
+        </div>
+      </div>
+
+      <details class="pub-group" open>
+        <summary>Industrial Patents <span class="n">1 family · 3 jurisdictions</span></summary>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="t">Performance Modeling for Cloud Applications</div>
+            <div class="v">US 11,962,474 (2024) · EPO EP4038832A1 · WIPO WO2021063502A1 · Ericsson AB</div>
+            <div class="a">Michel Gokan Khan, Wenfeng Hu, Carolyn Cartwright, Huiyuan Wang</div>
+            <div class="l"><a href="https://patents.google.com/patent/US11962474B2/en" target="_blank" rel="noopener">Google Patents</a></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-group" open>
+        <summary>Journal Articles <span class="n">6</span></summary>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="t">PerfCam: Digital Twinning for Production Lines Using 3D Gaussian Splatting and Vision Models</div>
+            <div class="v">IEEE Access, vol. 13, pp. 85390-85406, 2025</div>
+            <div class="a">M. Gokan Khan, R. Guarese, F. Johnson, X. V. Wang, A. Bergman, B. Edvinsson, M. Romero, J. Vachier, J. Kronqvist</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/10990187" target="_blank" rel="noopener">Paper</a><a href="https://github.com/AstraZeneca/PerfCam" target="_blank" rel="noopener">Code</a><a href="https://github.com/AstraZeneca/PerfCam-Dataset" target="_blank" rel="noopener">Dataset</a><a href="https://ieeexplore.ieee.org/ielx8/6287639/10820123/10990187/graphical_abstract/access-gavideo-3567702.mp4" target="_blank" rel="noopener">Video</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Fusing Model-Based and Data-Driven Prognostic Methods for Real-Time Model Updating</div>
+            <div class="v">Mechanical Systems and Signal Processing, vol. 238, 2025</div>
+            <div class="a">T. Li, M. Moradi, M. Gokan Khan, R. Guarese, J. Kronqvist, M. Romero, M. Xiao, X. V. Wang</div>
+            <div class="l"><a href="https://doi.org/10.1016/j.ymssp.2025.113200" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">PerfSim: A Performance Simulator for Cloud Native Microservice Chains</div>
+            <div class="v">IEEE Transactions on Cloud Computing, vol. 11, no. 2, pp. 1395-1413, 2023</div>
+            <div class="a">M. Gokan Khan, J. Taheri, A. Al-Dulaimy, A. Kassler</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/9652084" target="_blank" rel="noopener">Paper</a><a href="https://www.perfsim.com/" target="_blank" rel="noopener">Homepage</a><a href="https://ieee-dataport.org/documents/experiments-data-used-evaluating-perfsim-simulation-accuracy-based-sfc-stress-workloads" target="_blank" rel="noopener">Dataset</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Service Function Chain Placement for Joint Cost and Latency Optimization</div>
+            <div class="v">Mobile Networks and Applications, vol. 25, no. 6, pp. 2191-2205, 2020</div>
+            <div class="a">M. A. Khoshkholghi, M. Gokan Khan, K. A. Noghani, J. Taheri, D. Bhamare, A. Kassler, Z. Xiang, S. Deng, X. Yang</div>
+            <div class="l"><a href="https://link.springer.com/article/10.1007/s11036-020-01661-w" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Kani: A QoS-Aware Hypervisor-Level Scheduler for Cloud Computing Environments</div>
+            <div class="v">Cluster Computing, vol. 19, no. 2, pp. 567-583, 2016</div>
+            <div class="a">E. Asyabi, A. Azhdari, M. Dehsangi, M. Gokan Khan, M. Sharifi, S. V. Azhari</div>
+            <div class="l"><a href="https://link.springer.com/article/10.1007/s10586-016-0541-5" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">SocioBalance: A Network-Based Simulation Game to Rank Links' Impact Strength in a Complex Social System</div>
+            <div class="v">Under review, 2025</div>
+            <div class="a">A. Boodaghian Asl, J. Raghothama, M. Gokan Khan, A. S. Darwich, S. Meijer</div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-group">
+        <summary>Conference Papers <span class="n">9</span></summary>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="t">A Scoping Review and Expert Recommendations for Immersive Solutions towards Predictive Maintenance</div>
+            <div class="v">IEEE VR Workshops (VRW), pp. 1081-1088, 2025</div>
+            <div class="a">R. Guarese, M. Gokan Khan, D. Lassiter, J. Vachier, F. Johnson, B. Edvinsson, A. Bergman, X. V. Wang, M. Romero</div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Graph Attention Networks and Deep Q-Learning for Service Mesh Optimization: A Digital Twinning Approach</div>
+            <div class="v">IEEE International Conference on Communications (ICC), pp. 2913-2918, 2024</div>
+            <div class="a">M. Gokan Khan, J. Taheri, A. Kassler, A. Boodaghian Asl</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/10622616" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">A Performance Modelling Approach for SLA-Aware Resource Recommendation in Cloud Native Network Functions <span class="award-tag">🏆 Best Student Paper</span></div>
+            <div class="v">IEEE Conference on Network Softwarization (NetSoft), pp. 292-300, 2020</div>
+            <div class="a">M. Gokan Khan, J. Taheri, M. A. Khoshkholghi, A. Kassler, C. Cartwright, M. Darula, S. Deng</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/9165482" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Performance Benchmarking of Virtualized Network Functions to Correlate Key Performance Metrics with System Activity</div>
+            <div class="v">International Conference on Network of the Future (NoF), pp. 73-81, 2020</div>
+            <div class="a">Y. Sharma, M. Gokan Khan, J. Taheri, A. Kassler</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/9249199" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">An Empirical Study on GUI-ii Interview Methods in Participatory Design</div>
+            <div class="v">Int. Conference on Interfaces and Human Computer Interaction, pp. 3-10, 2019</div>
+            <div class="a">A. Boodaghian Asl, M. Gokan Khan</div>
+            <div class="l"><a href="https://www.iadisportal.org/digital-library/an-empirical-study-on-gui-ii-interview-methods-in-participatory-design" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Studying the Effect of Online Medical Applications on Patients Healing Time and Doctors Utilization Using Discrete Event Simulation</div>
+            <div class="v">IEEE E-Health and Bioengineering Conference (EHB), 2019</div>
+            <div class="a">A. Boodaghian Asl, M. Gokan Khan</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/8970080" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">NFV-Inspector: A Systematic Approach to Profile and Analyze Virtual Network Functions</div>
+            <div class="v">IEEE International Conference on Cloud Networking (CloudNet), 2018</div>
+            <div class="a">M. Gokan Khan, S. Bastani, J. Taheri, A. Kassler, S. Deng</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/8549333" target="_blank" rel="noopener">Paper</a><a href="https://github.com/michelgokan/NFV-Inspector" target="_blank" rel="noopener">Code</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Automated Analysis and Profiling of Virtual Network Functions: The NFV-Inspector Approach <span class="award-tag">🏆 Best Demo Paper</span></div>
+            <div class="v">IEEE Conference on NFV and Software Defined Networks (NFV-SDN), 2018</div>
+            <div class="a">M. Gokan Khan, J. Taheri, A. Kassler, M. Darula</div>
+            <div class="l"><a href="https://ieeexplore.ieee.org/document/8725697" target="_blank" rel="noopener">Paper</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Model-Based Interview Method Selection Approach in Participatory Design</div>
+            <div class="v">Interactivity and the Future of the Human-Computer Interface, 2020</div>
+            <div class="a">A. Boodaghian Asl, M. Gokan Khan</div>
+            <div class="l"><a href="https://www.igi-global.com/chapter/model-based-interview-method-selection-approach-in-participatory-design/250754" target="_blank" rel="noopener">Chapter</a></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-group">
+        <summary>Books &amp; Book Chapters <span class="n">5</span></summary>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="t">Edge Computing: Models, Technologies and Applications</div>
+            <div class="v">Institution of Engineering and Technology (IET), 2020 · contributing author across the book</div>
+            <div class="a">Eds. J. Taheri, S. Deng</div>
+            <div class="l"><a href="https://digital-library.theiet.org/doi/book/10.1049/pbpc033e" target="_blank" rel="noopener">Book</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Introduction to Edge Computing</div>
+            <div class="v">Chapter 1, Edge Computing (IET), pp. 3-25, 2020</div>
+            <div class="a">A. Al-Dulaimy, Y. Sharma, M. Gokan Khan, J. Taheri</div>
+            <div class="l"><a href="https://digital-library.theiet.org/doi/10.1049/pbpc033e_ch1" target="_blank" rel="noopener">Chapter</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Resource Allocation Models in/for Edge Computing</div>
+            <div class="v">Chapter 7, Edge Computing (IET), pp. 125-146, 2020</div>
+            <div class="a">M. A. Khoshkholghi, M. Gokan Khan, Y. Sharma, J. Taheri</div>
+            <div class="l"><a href="https://digital-library.theiet.org/doi/abs/10.1049/PBPC033E_ch7" target="_blank" rel="noopener">Chapter</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Networking Models and Protocols for/on Edge Computing</div>
+            <div class="v">Edge Computing (IET), 2020</div>
+            <div class="a">Y. Sharma, M. Gokan Khan, A. Al-Dulaimy, M. A. Khoshkholghi, J. Taheri</div>
+            <div class="l"><a href="https://www.researchgate.net/profile/Yogesh-Sharma-32/publication/353274282_Networking_models_and_protocols_foron_edge_computing/links/60f0b7219541032c6d41d681/Networking-models-and-protocols-for-on-edge-computing.pdf" target="_blank" rel="noopener">Chapter</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Open-Source Projects for Edge Computing</div>
+            <div class="v">Chapter 13, Edge Computing (IET), pp. 265-290, 2020</div>
+            <div class="a">M. Gokan Khan, A. Al-Dulaimy, M. A. Khoshkholghi, J. Taheri</div>
+            <div class="l"><a href="https://digital-library.theiet.org/doi/abs/10.1049/PBPC033E_ch13" target="_blank" rel="noopener">Chapter</a></div>
+          </div>
+        </div>
+      </details>
+
+      <details class="pub-group">
+        <summary>Theses &amp; Datasets <span class="n">5</span></summary>
+        <div class="pub-list">
+          <div class="pub-item">
+            <div class="t">Unchaining Microservice Chains: Machine Learning Driven Optimization in Cloud Native Systems</div>
+            <div class="v">PhD Dissertation, Karlstad University, 2023 (defended Jan 2024) · SPEC Distinguished Dissertation Award nominee</div>
+            <div class="l"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1811762&amp;dswid=3266" target="_blank" rel="noopener">DiVA</a><a href="https://www.youtube.com/watch?v=bVvymER-ZcM" target="_blank" rel="noopener">Defence video</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Performance Modelling and Simulation of Service Chains for Telecom Clouds</div>
+            <div class="v">Licentiate Dissertation, Karlstad University, 2021</div>
+            <div class="l"><a href="https://kau.diva-portal.org/smash/record.jsf?pid=diva2%3A1545024&amp;dswid=-8416" target="_blank" rel="noopener">DiVA</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">SLA-Aware Virtual Machines CPU Scheduling in Cloud Environments</div>
+            <div class="v">Master's Thesis, Iran University of Science and Technology, 2015 (in Persian)</div>
+            <div class="l"><a href="https://www.researchgate.net/publication/344217890_SLA-Aware_Virtual_Machines_CPU_Scheduling_in_Cloud_Environments" target="_blank" rel="noopener">ResearchGate</a></div>
+          </div>
+          <div class="pub-item">
+            <div class="t">A Survey on QoS-Aware Multitenant SaaS</div>
+            <div class="v">Master Seminar, 2015 (in Persian)</div>
+          </div>
+          <div class="pub-item">
+            <div class="t">Experiments Data for Evaluating PerfSim Simulation Accuracy Based on sfc-stress Workloads</div>
+            <div class="v">IEEE DataPort, 2021</div>
+            <div class="l"><a href="https://ieee-dataport.org/documents/experiments-data-used-evaluating-perfsim-simulation-accuracy-based-sfc-stress-workloads" target="_blank" rel="noopener">Dataset</a></div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= HONORS ================= -->
+  <section id="honors" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">05 · Honors</span>
+        <h2 class="section-title">Awards &amp; recognition</h2>
+      </div>
+      <div class="honors-grid">
+        <div class="honor-card"><span class="medal">🏆</span><div><div class="h-t">Nominated: SPEC Kaivalya Dixit Distinguished Dissertation Award</div><div class="h-y">2024</div></div></div>
+        <div class="honor-card"><span class="medal">🥇</span><div><div class="h-t">IEEE Best Student Paper Award, NetSoft Conference</div><div class="h-y">2020 · <a href="https://netsoft2020.ieee-netsoft.org/authors/best-paper-awards/index.html" target="_blank" rel="noopener">link</a></div></div></div>
+        <div class="honor-card"><span class="medal">🥇</span><div><div class="h-t">IEEE Best Demo Paper Award, NFV-SDN Conference</div><div class="h-y">2018 · <a href="https://nfvsdn2018.ieee-nfvsdn.org/index.html" target="_blank" rel="noopener">link</a></div></div></div>
+        <div class="honor-card"><span class="medal">🌟</span><div><div class="h-t">IEEE Young Professional of the Month, IEEE Sweden</div><div class="h-y">May 2019 · <a href="https://www.linkedin.com/feed/update/urn:li:activity:6547057228174680064" target="_blank" rel="noopener">link</a></div></div></div>
+        <div class="honor-card"><span class="medal">🎮</span><div><div class="h-t">Nominated: Best Mobile Execution, Swedish Game Awards</div><div class="h-y">2019 · <a href="https://www.gameawards.se/Games/2019" target="_blank" rel="noopener">link</a></div></div></div>
+        <div class="honor-card"><span class="medal">✈️</span><div><div class="h-t">IEEE ComSoc Travel Grant, NetSoft '20 &amp; CloudNet '18</div><div class="h-y">2018 · 2020</div></div></div>
+        <div class="honor-card"><span class="medal">🤖</span><div><div class="h-t">5th Place, IranOpen International RoboCup 2D Soccer Simulation League</div><div class="h-y">2006</div></div></div>
+        <div class="honor-card"><span class="medal">🏅</span><div><div class="h-t">Champion, Regional high-school RoboCup 2D Soccer Simulation League</div><div class="h-y">2006</div></div></div>
+        <div class="honor-card"><span class="medal">🔧</span><div><div class="h-t">Participant, ArmRobotics Advanced LineFollower Robot Competition</div><div class="h-y">2008</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RECOMMENDATIONS ================= -->
+  <section id="words" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">06 · Words</span>
+        <h2 class="section-title">What mentors &amp; collaborators say</h2>
+        <p class="section-sub">A few excerpts, shared without names or titles. There are more than a dozen public recommendations on <a href="https://www.linkedin.com/in/michelgokan/details/recommendations/" target="_blank" rel="noopener">my LinkedIn</a>, and another dozen written letters available upon request.</p>
+      </div>
+      <div class="quotes-grid">
+        <blockquote class="quote-card">
+          <p>He undertook the development of PerfSim almost single-handedly, demonstrating his technical prowess and dedication to advancing the field of cloud computing. His contributions have advanced the academic discourse and had a tangible impact on industry practices.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>An extremely smart, organized, and hard-working individual. His leadership skills, commitment, creativity, and sympathetic character would make him an invaluable asset for any technology-based organization.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>By the age of 27 he had ten years of professional working experience in well-respected companies and start-ups, which is completely exceptional among my students. He has proved to have a divergent, scientist thinking style, intelligence, and leadership qualities.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>A brilliant mind in designing complex and effective algorithms and high-quality applications. One of the most creative and intelligent students I ever had.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>An extremely high level of dedication, intelligence, and self-motivation. He is a high achiever and has done much in his life already: responsible, ethical, and a true idealist.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>He was always asking important questions and showed a high dominance in the topic. He is gifted with coping and capable of dealing with highly stressful situations and leading highly complex projects.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>He became an integral part of the team, contributing in a very constructive way to the project strategy and solution discussions, proving his technical seniority and bringing his fresh, young mindset.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>An exceptionally smart and highly motivated person who is extremely knowledgeable in cloud network architecture, orchestration and automation. His fresh perspective directly contributed to the success of our project, bringing it to the next level.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>Michel is full of energy and really loves problem solving. For him, there are no problems, only opportunities. He has tremendous drive and the ability to produce far beyond expectations. He is a true tech wizard.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>His strong enterprising spirit, honest approach to problems and a very pleasant collaborative personality. He will be a great asset to any organization or team he works with.</p>
+        </blockquote>
+        <blockquote class="quote-card">
+          <p>Any team fortunate enough to have him on board is gaining an invaluable asset. Whether he possesses the solution or knows the path to discover it, Michel consistently delivers.</p>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TALKS & PRESS ================= -->
+  <section id="talks" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">07 · Voice</span>
+        <h2 class="section-title">Talks, podcasts &amp; press</h2>
+      </div>
+      <div class="two-col">
+        <div class="list-block">
+          <h3>Talks &amp; Podcasts</h3>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/agentic.jpg" alt="" loading="lazy"><div class="t">What Is Agentic Software Engineering? Hype?</div><div class="m">Softwarify AI Talks · YouTube</div><div class="l"><a href="https://www.youtube.com/watch?v=dUUkEsIEd6s" target="_blank" rel="noopener">Watch</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/yerevan.jpg" alt="" loading="lazy"><div class="t">AI in Digital Twins</div><div class="m">Yerevan State University · Krisp AI Lab / YerevaNN · Sep 2025</div><div class="l"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7366078343303073795/" target="_blank" rel="noopener">Seminar</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/profarm.jpg" alt="" loading="lazy"><div class="t">Interview with computer scientists Arsineh Boodaghian Asl and Michel Gokan Khan (in Armenian)</div><div class="m">ProfArm Podcast · Aug 2025</div><div class="l"><a href="https://www.youtube.com/watch?v=tgEp3TtVVrg" target="_blank" rel="noopener">YouTube</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/digitalfutures.jpg" alt="" loading="lazy"><div class="t">AI-Driven Digital Twins in Action: From Cloud Native Systems to Advanced Industrial Applications</div><div class="m">Digital Futures Seminar Series · Dec 2024</div><div class="l"><a href="https://www.digitalfutures.kth.se/event/ai-driven-digital-twins-in-action-from-cloud-native-systems-to-advanced-industrial-applications/" target="_blank" rel="noopener">Event</a><a href="https://www.youtube.com/watch?v=ZZrt9nCisds" target="_blank" rel="noopener">Video</a></div></div>
+          <div class="li-item"><div class="t">ML for Digital Twinning and Predictive Maintenance</div><div class="m">SciML Mid-term Workshop · KTH · Jun 2024</div><div class="l"><a href="https://www.kth.se/sciml/mid-term-workshop" target="_blank" rel="noopener">Workshop</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/defence.jpg" alt="" loading="lazy"><div class="t">PhD Defence: Unchaining Microservice Chains</div><div class="m">Karlstad University · Jan 2024</div><div class="l"><a href="https://www.youtube.com/watch?v=bVvymER-ZcM" target="_blank" rel="noopener">YouTube</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/skript.jpg" alt="" loading="lazy"><div class="t">AI: Reshaping the Software Landscape</div><div class="m">Skript Tech Podcast · Jul 2023</div><div class="l"><a href="https://podcasts.apple.com/gb/podcast/ai-reshaping-the-software-landscape/id1697521493?i=1000621164649" target="_blank" rel="noopener">Apple Podcasts</a></div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/amplifyre.jpg" alt="" loading="lazy"><div class="t">The Latest AI Trends in Software Development</div><div class="m">Amplifyre Podcast · Feb 2023</div><div class="l"><a href="https://www.youtube.com/watch?v=E8VSEOG96oQ" target="_blank" rel="noopener">YouTube</a></div></div>
+          <div class="li-item"><div class="t">From NFV-Inspector to EasyEPC: Towards NFV Optimization and Capacity Planning of vEPC and 5G Core</div><div class="m">Private talk at Ericsson · Jan 2020 · NDA restricted</div></div>
+          <div class="li-item has-thumb"><img class="talk-thumb" src="assets/img/talks/fullstack.jpg" alt="" loading="lazy"><div class="t">A Tech Talk with Michel Gokan Khan (in Persian)</div><div class="m">Fullstack Radio · Apr 2019</div><div class="l"><a href="https://bit.ly/49TQGpy" target="_blank" rel="noopener">Listen</a></div></div>
+          <div class="li-item"><div class="t">5G and Future Directions</div><div class="m">Public event at Vaimo AB, Stockholm · Dec 2018</div></div>
+        </div>
+        <div class="list-block">
+          <h3>Press &amp; Media</h3>
+          <div class="li-item"><div class="t">New Commerce Platform Vette to Launch 2026</div><div class="m">Condé Nast Newsroom · Sep 2025</div><div class="l"><a href="https://fashionunited.com/news/retail/conde-nast-bets-on-creator-commerce-with-vette/2025091768263" target="_blank" rel="noopener">Coverage</a><a href="https://www.businessoffashion.com/articles/media/exclusive-conde-nast-to-launch-influencer-storefront-platform/" target="_blank" rel="noopener">BoF</a></div></div>
+          <div class="li-item"><div class="t">Forskningspodden #112: Unchaining Microservice Chains - an interview with Michel Gokan Khan</div><div class="m">Karlstad University Research Podcast · Feb 2024</div><div class="l"><a href="https://www.kau.se/forskningspodden-112" target="_blank" rel="noopener">Listen</a></div></div>
+          <div class="li-item"><div class="t">Meet our CTO: Michel Gokan Khan</div><div class="m">Spotin AB Press Release · Nov 2022</div><div class="l"><a href="https://www.linkedin.com/posts/spotinab_spotinteam-activity-6988429470810411008-yofN" target="_blank" rel="noopener">LinkedIn</a></div></div>
+          <div class="li-item"><div class="t">Michel Gokan Khan går in som ny CTO på Spotin</div><div class="m">IT Media Group · Feb 2022</div><div class="l"><a href="https://it-karriar.se/michel-gokan-khan/" target="_blank" rel="noopener">Article</a></div></div>
+          <div class="li-item"><div class="t">Michel Gokan Khan teknikchef på Spotin</div><div class="m">Affärer i Norr · Mar 2022</div><div class="l"><a href="https://affarerinorr.se/nyheter/2022/mars/michel-gokan-khan-teknikchef-paa-spotin/" target="_blank" rel="noopener">Article</a></div></div>
+          <div class="li-item"><div class="t">Michel Gokan Khan Won the Best Student Paper Award at IEEE NetSoft 2020</div><div class="m">Karlstad University Press · Aug 2020</div><div class="l"><a href="https://www.kau.se/en/cs/news/michel-gokan-khan-won-best-student-paper-award-ieee-netsoft-2020" target="_blank" rel="noopener">Article</a></div></div>
+          <div class="li-item"><div class="t">New Platform Facilitates the Work of NFV Researchers</div><div class="m">Karlstad University Press · Feb 2019</div><div class="l"><a href="https://www.kau.se/en/cs/news/new-platform-facilitates-use-machine-learning-nfv-optimization" target="_blank" rel="noopener">Article</a></div></div>
+          <div class="li-item"><div class="t">Interview: IEEE Young Professional of the Month Award</div><div class="m">IEEE Sweden YP Group · May 2019</div><div class="l"><a href="https://ypsweden.ieeer8.org/2019/may/ypma-award" target="_blank" rel="noopener">Interview</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEACHING & SERVICE ================= -->
+  <section id="teaching" class="section">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-index">08 · Teaching &amp; Service</span>
+        <h2 class="section-title">Giving it forward</h2>
+      </div>
+
+      <div class="teach-grid">
+        <div class="teach-card"><span class="code">DVGC15 · KARLSTAD</span><div class="t">Distributed Systems and Applications</div><div class="m">Co-lecturing, Feb &amp; Oct 2019 · <a href="https://www.kau.se/en/education/programmes-and-courses/courses/DVGC15" target="_blank" rel="noopener">course</a></div></div>
+        <div class="teach-card"><span class="code">DVGC02 · KARLSTAD</span><div class="t">Computer Networking II</div><div class="m">Designed and ran labs, lectured during lab sessions, 2020-2021 · <a href="https://www.kau.se/en/education/programmes-and-courses/courses/DVGC02" target="_blank" rel="noopener">course</a></div></div>
+        <div class="teach-card"><span class="code">DVGA21 · KARLSTAD</span><div class="t">Databases</div><div class="m">Lab instructor, 2018-2020 · <a href="https://www.kau.se/en/education/programmes-and-courses/courses/DVGA21" target="_blank" rel="noopener">course</a></div></div>
+        <div class="teach-card"><span class="code">DVGA01 · KARLSTAD</span><div class="t">Programming Techniques</div><div class="m">Lab instructor, 2019-2020 · <a href="https://www.kau.se/en/education/programmes-and-courses/courses/DVGA01" target="_blank" rel="noopener">course</a></div></div>
+        <div class="teach-card"><span class="code">SHORT COURSE</span><div class="t">Crash Course on OOP in C#</div><div class="m">Karlstad Innovation Park via The Great Journey, 2018</div></div>
+        <div class="teach-card"><span class="code">2009 - 2012 · TEHRAN</span><div class="t">Advanced C and C++ for RoboCup</div><div class="m">Coached multiple high-school RoboCup 2D soccer-simulation teams</div></div>
+      </div>
+
+      <div class="two-col" style="margin-top: 48px">
+        <div class="list-block">
+          <h3>Thesis Supervision &amp; Pedagogy</h3>
+          <div class="li-item"><div class="t">A Framework for Seamless Server-Driven UI Component Integration into Existing Mobile Applications</div><div class="m">BSc thesis, Oliver Högberg · Luleå University of Technology · 2022 · industry-side main supervisor</div><div class="l"><a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1716813&amp;dswid=6087" target="_blank" rel="noopener">DiVA</a></div></div>
+          <div class="li-item"><div class="t">Improvement of Power Consumption in IoT Networks Using Heterogeneous Clustering</div><div class="m">MSc thesis (co-supervised), Hamed Moases · Azad University · 2020</div></div>
+          <div class="li-item"><div class="t">Doctoral Supervision (LH207V), 80 h certificate</div><div class="m">KTH Royal Institute of Technology · Dec 2024</div></div>
+          <div class="li-item"><div class="t">Teaching at University: Knowledge, Learning and Practical Teaching (KLL), 80 h certificate</div><div class="m">Karlstad University · May 2021</div></div>
+        </div>
+        <div class="list-block">
+          <h3>Academic Service &amp; Community</h3>
+          <div class="li-item"><div class="t">Peer Reviewer: IEEE Transactions on Vehicular Technology · Parallel &amp; Distributed Systems · Industrial Informatics · IEEE Access</div><div class="m">2019 - 2025</div></div>
+          <div class="li-item"><div class="t">Technical Program Committee: SIoTEC · SNCNW</div><div class="m">2022 - 2024</div></div>
+          <div class="li-item"><div class="t">Advisory Board Member, Qlerify AB</div><div class="m">Stockholm · 2024 - present</div></div>
+          <div class="li-item"><div class="t">Head of Chapter &amp; Instructor, Society of Orphaned Armenian Relief (SOAR)</div><div class="m">Iran · 2015 - 2017</div></div>
+          <div class="li-item"><div class="t">Leader, Robotics Division, Armenian Association of University Graduates</div><div class="m">Iran · 2010 - 2014</div></div>
+          <div class="li-item"><div class="t">Technical Director, Mathematics Society of IAU University Graduates</div><div class="m">Tehran · 2008 - 2010</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-head" style="text-align:center">
+        <span class="section-index">09 · Contact</span>
+        <h2 class="section-title">Let's build something real</h2>
+      </div>
+      <p class="big-line">Research collaborations, advisory, speaking, or just a good conversation about <em>digital twins, agentic AI, and cloud-native systems</em>.</p>
+      <div class="email-card"><img src="em.jpg" alt="Email address"></div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/michelgokan/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=LJV0pHQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/michelgokan" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://michelgokan.github.io" target="_blank" rel="noopener">Academic Webpage</a>
+      </div>
+      <p class="contact-meta">
+        Forskningsringen 81B, Sundbyberg, Sweden
+      </p>
+    </div>
+    <img class="contact-cutout" src="assets/media/portrait.webp?v=3" alt="" aria-hidden="true">
+  </section>
+
+  <footer>
+    © <span id="year">2026</span> Michel Gokan Khan · Built with an unreasonable amount of scroll physics · <a href="https://github.com/michelgokan/michelgokan.github.io" target="_blank" rel="noopener">Source</a> · <a href="#" data-privacy-settings>Privacy choices</a>
+  </footer>
+
+  <script src="assets/js/scrub-engine.js?v=46"></script>
+  <script>
+    mountScrollWorld(document.getElementById("story"), {
+      brand: { name: "Michel Gokan Khan", href: "#story" },
+      nav: false,
+      hint: "scroll to fly",
+      diveScroll: 1.5,
+      crossfade: 0.12,
+      sections: [
+        {
+          id: "softwarify", label: "Softwarify®",
+          still: "assets/world/still-0.webp", clip: "assets/world/leg-0.mp4", clipMobile: "assets/world/leg-0-m.mp4",
+          accent: "#e6c368", scroll: 2.0, linger: 0.35,
+          eyebrow: "Michel Gokan Khan, PhD · The story, told backwards",
+          title: "Co-founding Softwarify.AI",
+          body: "Today I am co-founder, chairman and CEO of Softwarify®: a human-AI collaboration platform for software teams, where both human and AI engineers build large-scale software together.",
+          tags: ["Softwarify®", "Agentic AI", "Human + Machine", "softwarify.ai"]
+        },
+        {
+          id: "vette", label: "VETTE",
+          still: "assets/world/still-1.webp", clip: "assets/world/leg-1.mp4", clipMobile: "assets/world/leg-1-m.mp4",
+          accent: "#9ceafb", scroll: 1.7, linger: 0.3,
+          eyebrow: "2025 · CTO @ Co-Cart",
+          title: "Leading tech behind VETTE as CTO at Co-Cart",
+          body: "An AI-powered creator-commerce marketplace launching 2026, where creators design and own their digital storefronts. Proud that Spotin has been acquired by Condé Nast to power VETTE.",
+          tags: ["Condé Nast", "Creator Commerce", "Marketplaces"]
+        },
+        {
+          id: "twin", label: "Digital Twins",
+          still: "assets/world/still-2.webp?v=2", clip: "assets/world/leg-2.mp4?v=2", clipMobile: "assets/world/leg-2-m.mp4",
+          accent: "#2dd4bf", scroll: 2.7, linger: 0.25,
+          eyebrow: "2024-2025 · Postdoc · KTH × AstraZeneca",
+          title: "PostDoc at KTH: AI-Driven Digital Twins",
+          body: "At KTH I conducted research on digital twins (PerfCam), optimization, predictive maintenance, and human-AI collaboration, in a Digital Futures × AstraZeneca fellowship. This scene is the twin itself.",
+          tags: ["PerfCam", "3D Gaussian Splatting", "Industry 5.0"]
+        },
+        {
+          id: "spotin", label: "Spotin",
+          still: "assets/world/still-11.webp", clip: "assets/world/leg-11.mp4", clipMobile: "assets/world/leg-11-m.mp4",
+          accent: "#9ceafb", scroll: 1.7, linger: 0.3,
+          eyebrow: "2022-2024 \u00b7 CTO @ Spotin AB",
+          title: "Leading tech behind Spotin as CTO",
+          body: "Re-architected the entire product's tech stack into scalable microservices, the foundation that carried Spotin to its Cond\u00e9 Nast acquisition. This film is Spotin's own intro.",
+          tags: ["Microservices", "DevOps", "Acquired by Cond\u00e9 Nast"]
+        },
+        {
+          id: "phd", label: "The PhD",
+          still: "assets/world/still-3.webp?v=2", clip: "assets/world/leg-3.mp4?v=4", clipMobile: "assets/world/leg-3-m.mp4",
+          accent: "#4fd8eb", scroll: 1.9, linger: 0.3,
+          eyebrow: "2017-2023 · Karlstad University × Ericsson",
+          title: "PhD in ML: Unchaining microservice chains",
+          body: "Machine learning to optimize cloud-native 5G systems with Ericsson: PerfSim, NFV-Inspector, a US patent, two IEEE best-paper awards, and a Best PhD Thesis nomination. This scene grew from my printed thesis cover.",
+          tags: ["PerfSim", "NFV-Inspector", "US Patent", "5G Core"]
+        },
+        {
+          id: "rm", label: "B2B2C",
+          still: "assets/world/still-4.webp", clip: "assets/world/leg-4.mp4", clipMobile: "assets/world/leg-4-m.mp4",
+          accent: "#2dd4bf", scroll: 1.5, linger: 0.25,
+          eyebrow: "2016-2017 · RM Innovation",
+          title: "A B2B2C platform, end to end.",
+          body: "As tech lead and solution architect I designed B2B2C commerce solutions connecting businesses to businesses to consumers, and led the organization's agile transformation.",
+          tags: ["B2B2C", "Solution Architecture", "Agile"]
+        },
+        {
+          id: "xen", label: "Xen",
+          still: "assets/world/still-5.webp", clip: "assets/world/leg-5.mp4?v=4", clipMobile: "assets/world/leg-5-m.mp4",
+          accent: "#4fd8eb", scroll: 1.5, linger: 0.25,
+          eyebrow: "2013-2016 · MSc · Iran University of Science and Technology",
+          title: "Optimizing CPU Scheduling Algorithms",
+          body: "A novel SLA-aware CPU scheduler inside the Xen hypervisor, squeezing fairness and performance out of shared clouds.",
+          tags: ["Xen Hypervisor", "CPU Scheduling", "SLA-Aware"]
+        },
+        {
+          id: "vaimo", label: "Vaimo",
+          still: "assets/world/still-6.webp?v=2", clip: "assets/world/leg-6.mp4?v=2", clipMobile: "assets/world/leg-6-m.mp4?v=2",
+          accent: "#e6c368", scroll: 1.5, linger: 0.25,
+          eyebrow: "2013-2014 · Vaimo AB, Stockholm",
+          title: "Contributed to Dozens of E‑commerce Stores",
+          body: "At Vaimo, one of Europe's leading e-commerce agencies and my first Swedish company, I contributed BE/FE development across Magento stores: Eton Shirts, Björn Borg, TopStreetWear, Flight Club, Ridestore, Kaibosh, Belysningsdesign, Hardox and vaimo.com itself, plus SLA on-call for Gant, Konga and Pavers.",
+          tags: ["Magento", "E-commerce", "Stockholm"]
+        },
+        {
+          id: "robots", label: "Robots & Drones",
+          still: "assets/world/still-7.webp?v=2", clip: "assets/world/leg-7.mp4?v=2", clipMobile: "assets/world/leg-7-m.mp4",
+          accent: "#2dd4bf", scroll: 1.7, linger: 0.3,
+          eyebrow: "2008-2013 · Built by hand",
+          title: "Robots I built myself.",
+          body: "A quadrotor taught to fly with neuroevolution, an earthworm crawler evolved with NEAT, and a line-follower racing the ArmRobotics track. Footage generated from photos of the real robots; more in Projects below.",
+          tags: ["Quadrotor + NEAT", "Crawler Robot", "LineFollower"]
+        },
+        {
+          id: "olam", label: "Olam Tech",
+          still: "assets/world/still-10.webp", clip: "assets/world/leg-10.mp4", clipMobile: "assets/world/leg-10-m.mp4",
+          accent: "#4fd8eb", scroll: 1.7, linger: 0.3,
+          eyebrow: "2011-2015 \u00b7 Olam Technologies Group \u00b7 Co-Founder & CEO",
+          title: "My first company.",
+          body: "Olam Technologies served customers worldwide: a home automation system running on our own controller boards, SaaS platforms for online project assessment, and complete e-commerce storefronts. The board and the shop in this scene are the real ones.",
+          tags: ["Home Automation", "SaaS / PaaS", "E-commerce"]
+        },
+        {
+          id: "robocup", label: "RoboCup",
+          still: "assets/world/still-8.webp?v=2", clip: "assets/world/leg-8.mp4?v=2", clipMobile: "assets/world/leg-8-m.mp4",
+          accent: "#e6c368", scroll: 1.7, linger: 0.3,
+          eyebrow: "2005-2008 · During high school · My first AI",
+          title: "RoboCup 2D Soccer Simulation",
+          body: "The RoboCup 2D soccer simulation team I led during high school reached the German World Cup 2006 qualification, took 5th at IranOpen 2006, and won the National Open League championship.",
+          tags: ["2D Soccer Simulation", "Multi-Agent AI", "C++"]
+        },
+        {
+          id: "origin", label: "The 386",
+          still: "assets/world/still-9.webp", clip: "assets/world/leg-9.mp4", clipMobile: "assets/world/leg-9-m.mp4",
+          accent: "#9ceafb", scroll: 2.0, linger: 0.4,
+          eyebrow: "Kindergarten · Where it all began",
+          title: "An old IBM 386.",
+          body: "I started coding at a very early age: in kindergarten my dad brought home an old IBM 386 laptop, and that grey machine lit the passion behind everything above.",
+          cta: {
+            primary: { label: "Explore the full portfolio", href: "#about" },
+            secondary: { label: "All 33 projects", href: "#projects" }
+          }
+        }
+      ],
+      connectors: ["assets/world/conn-0.mp4", "assets/world/conn-1.mp4?v=2", "assets/world/conn-11.mp4", "assets/world/conn-12.mp4", "assets/world/conn-3.mp4", null, null, "assets/world/conn-6.mp4", null, "assets/world/conn-10.mp4", "assets/world/conn-8.mp4"],
+      connectorsMobile: ["assets/world/conn-0-m.mp4", "assets/world/conn-1-m.mp4", "assets/world/conn-11-m.mp4", "assets/world/conn-12-m.mp4", "assets/world/conn-3-m.mp4", null, null, "assets/world/conn-6-m.mp4", null, "assets/world/conn-10-m.mp4", "assets/world/conn-8-m.mp4"]
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/projects-data.js?v=33" defer></script>
+  <script src="assets/js/main.js?v=32" defer></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/consent.js?v=4" defer></script>
+</body>
+</html>
